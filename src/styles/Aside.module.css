@@ -1,0 +1,54 @@
+.aside {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #2b282f;
+  color: white;
+  height: cacl(100vh - 60px);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.link {
+  margin-bottom: 30px;
+  font-size: 27px;
+}
+
+.link a {
+  color: white;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn button {
+  padding: 10px 60px;
+}
+
+.btn button:hover {
+  background-color: white;
+}
+
+.btn button:hover a {
+  color: black;
+}
+
+.svg {
+  overflow: hidden;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 370px) {
+  .svg {
+    display: none;
+  }
+}

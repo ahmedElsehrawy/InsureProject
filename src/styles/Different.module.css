@@ -1,0 +1,166 @@
+.different {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.header {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 30px 0;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+  margin-bottom: 70px;
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+}
+
+.vector {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #2c2640;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.icon {
+  font-size: 20px !important;
+}
+.item p {
+  color: rgba(0, 0, 0, 0.493);
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.findSec {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  background-color: #2c2640;
+  padding: 0 50px;
+  margin: 100px 0;
+}
+
+.findHeader {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+button {
+  margin-left: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: 600;
+  margin-left: -2px;
+}
+
+.btn button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.btn button:hover a {
+  color: white;
+}
+
+.btn a {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 900px) {
+  .categories {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .item p {
+    text-align: center;
+  }
+
+  .findHeader {
+    font-size: 30px;
+  }
+
+  .header {
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .different {
+    width: 100%;
+  }
+  .categories {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .item p {
+    text-align: center;
+  }
+
+  .findSec {
+    width: 100%;
+    flex-direction: column;
+    padding: 50px 30px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .findHeader {
+    font-size: 30px;
+    line-height: unset;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+}

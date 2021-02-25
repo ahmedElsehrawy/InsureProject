@@ -1,0 +1,145 @@
+.headerContainer {
+  height: calc(100vh - 60px);
+  background-color: rgb(43, 43, 75);
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  height: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.white {
+  height: 20%;
+  background-color: #ffffff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content div {
+  color: white;
+  font-size: 65px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.content p {
+  color: rgba(255, 255, 255, 0.637);
+  text-align: left;
+}
+
+button {
+  margin-left: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: 600;
+  margin-left: 0px;
+}
+
+.btn button:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.btn button:hover a {
+  color: white;
+}
+
+.btn a {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.img {
+  flex: 1;
+}
+
+.img img {
+  position: relative;
+  top: 100px;
+  left: 0px;
+  height: 600px;
+}
+
+@media screen and (max-width: 1250px) {
+  .img img {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .img img {
+    height: 400px;
+    top: 180px;
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .headerContainer {
+    height: auto;
+    width: 100%;
+  }
+
+  .white {
+    display: none;
+  }
+  .header {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 120vh;
+  }
+  .img img {
+    display: none;
+  }
+  .img {
+    height: 70vh !important;
+    width: 100%;
+    background: url("../assets/image-intro-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+  .content {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .content div {
+    font-size: 40px;
+    line-height: unset;
+    text-align: center;
+  }
+
+  .content p {
+    text-align: center;
+    margin-bottom: 15px;
+    width: 85%;
+  }
+
+  .content button {
+    margin-bottom: 20px;
+  }
+}
